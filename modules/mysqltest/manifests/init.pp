@@ -21,10 +21,10 @@ class mysqltest {
     }
     
     mysql_grant { 'mano@localhost/testdb':
-      ensure => 'present',
-      options => ['GRANT'],
+      ensure     => 'present',
+      options    => ['GRANT'],
       priviliges => ['ALL'],
-      table => 'newtable',
-      user  => 'mano@localhost',
+      table      => 'newtable',
+      user       => 'mano@localhost',
     }
 }
